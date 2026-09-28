@@ -1,0 +1,4 @@
+project_id = "your-project-ref"
+
+[functions.nexus-admin]
+verify_jwt = false

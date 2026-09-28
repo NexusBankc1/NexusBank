@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071a33">
+  <title>NEXUS — Secure Sign In</title>
+  <link rel="stylesheet" href="css/nexus.css">
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-visual" aria-label="NEXUS Banking">
+      <div class="brand">
+        <span class="brand-mark">N</span>
+        <span><span class="brand-text">NEXUS</span><span class="brand-sub">Online Banking</span></span>
+      </div>
+      <div class="hero-copy">
+        <div class="feature-pills"><span>Secure access</span><span>Responsive banking</span><span>24/7 account view</span></div>
+        <h1>Banking built around your account.</h1>
+        <p>Sign in to your NEXUS account to access your banking dashboard, transactions, notifications and account services.</p>
+      </div>
+      <small style="color:rgba(255,255,255,.58)">NEXUS Software Systems</small>
+    </section>
+
+    <section class="auth-form-side">
+      <div class="auth-card">
+        <h2>Welcome back</h2>
+        <p class="intro">Sign in with the customer or administrator account created in the NEXUS system.</p>
+        <div class="auth-message" data-auth-message hidden></div>
+        <form id="login-form" novalidate>
+          <div class="field">
+            <label for="email">Email address</label>
+            <div class="input-wrap"><input id="email" name="email" type="email" autocomplete="username" placeholder="you@example.com" required></div>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+              <button class="password-toggle" type="button" id="toggle-password" aria-pressed="false">Show</button>
+            </div>
+          </div>
+          <button class="primary-btn" id="login-button" type="submit">Sign in</button>
+        </form>
+        <p class="auth-note">Account creation is controlled by NEXUS administrators. There is no public sign-up form.</p>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>
